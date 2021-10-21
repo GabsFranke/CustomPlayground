@@ -22,7 +22,7 @@ function getStoredSettings() {
     });
 }
 
-// traer color de texto unicamente para los iframes
+// traer color de texto unicamente, para los iframes
 function doCommonTextColor() {
     chrome.storage.sync.get(function (userSettings) {
         modifyIframeTextColor(userSettings.commonText)
@@ -39,7 +39,6 @@ function dynamicChanges() {
         }
     })
 }
-
 
 
 // f para aplicar los settings del usuario
@@ -155,7 +154,21 @@ function modifyIframeTextColor(commonText) {
     const iFrames = document.querySelectorAll("iframe");
     iFrames.forEach(iFrame => {
         if (iFrame.hasAttribute("srcdoc")) {
-            iFrame.srcdoc += `<style>*{--common-text:${commonText}; --ps-title:${commonText};}</style>`;
+            iFrame.srcdoc += `
+                <style>
+                    *{
+                        --common-text:${commonText};
+                        --ps-title:${commonText};}
+                    h2 {
+                        background-color: unset;
+                    }
+                    p {
+                        background-color: unset;
+                    }
+                    .pp {
+                        background-color: unset;
+                    }
+                </style>`;
         }
     });
 };
