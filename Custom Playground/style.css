@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Source+Code+Pro:ital,wght@0,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 }
 
 body {
+    font-family: 'Source Code Pro', monospace, 'Rampart One', cursive;
     background-color: #f8f5f5;
     color: rgb(0, 0, 0);
     -webkit-font-smoothing: antialiased;
@@ -22,16 +25,17 @@ body,
 input,
 button {
     font-size: 13px;
-    font-family: "SourceSansPro", sans-serif;
 }
 
 header{
+    font-family: 'Rampart One', cursive;
     grid-area: header;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    color: whitesmoke;
+    /* background-color: green; */
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(234, 234, 234);
 }
 
 header h1{
@@ -44,13 +48,14 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    /* background-color: green; */
     color: whitesmoke;
+    border-top: 1px solid rgb(234, 234, 234);
 }
 
 .contenedor {
     grid-area: contenedor;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     padding: 15px;
 }
 
@@ -67,12 +72,16 @@ footer{
     margin: 0 10px 0 0;
     transition: all .5s ease;
     border-radius: 4px;
-    font-weight: bold;
+    font-weight:bolder;
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.contenedor .ol:hover {
+    background-color: rgba(234, 234, 234, 0.534);
 }
 
 .contenedor .ol.activo {
-    background-color: rgba(38, 133, 35, 0.5);
-    color: white;
+    background-color: rgb(234, 234, 234);
 }
 
 .contenedor .subcontenedor {
@@ -95,14 +104,14 @@ footer{
 
 .contenedor .bloque.activo {
     opacity: 1;
-    background-color: rgba(38, 133, 35, 0.5);
     z-index: 100;
 }
 
 label {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;;
     padding: 0.5em;
-    font-size: 14px;
     font-weight: 500;
+    border-bottom: 1px solid rgb(234, 234, 234);
 }
 
 .colorSelector {
@@ -131,22 +140,20 @@ span {
 #darkPg {
     font-size: 22px;
     color: black;
-    border: black solid 2px;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 1px;
+
 }
 
 .darkPg{
-    background-color: green;
     border-radius: 20px;
-}
+} 
 
 .boton {
     cursor: pointer;
 }
 
 .resetStorage{
-    grid-area: delete;
     background-color: unset;
     color: rgba(163, 4, 4, 0.753);
     border-radius: 4px;
@@ -155,7 +162,6 @@ span {
 }
 
 .restoreAll{
-    grid-area: restore;
     background-color: unset;
     color: rgb(5, 59, 8);
     border-radius: 4px;
@@ -164,7 +170,6 @@ span {
 }
 
 .saveAll{
-    grid-area: save;
     background-color: unset;
     color: rgb(5, 59, 8);
     border-radius: 4px;
@@ -173,7 +178,6 @@ span {
 }
 
 .loadUserSettings{
-    grid-area: load;
     background-color: unset;
     color: rgb(5, 59, 8);
     border-radius: 4px;
@@ -195,12 +199,12 @@ button {
 
 button:hover,
 button:focus {
-    background: yellowgreen;
+    background: rgb(234, 234, 234);
 }
 
 
 button:focus {
-    outline: 1px solid rgb(9, 255, 0);
+    outline: 1px solid rgb(104, 104, 104);
     outline-offset: -2px;
 }
 
