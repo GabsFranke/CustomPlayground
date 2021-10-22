@@ -33,7 +33,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
     color: rgb(0, 0, 0);
     border-bottom: 1px solid rgb(234, 234, 234);
 }
@@ -48,14 +47,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
     color: whitesmoke;
     border-top: 1px solid rgb(234, 234, 234);
 }
 
 .contenedor {
     grid-area: contenedor;
-    /* background-color: yellowgreen; */
     padding: 15px;
 }
 
