@@ -79,7 +79,6 @@ function applySettings(userSettings) {
              color: var(--common-text);
          }
 
-
          /* Caja Negra */
          .Editor {
              background-color: rgba(var(--rgb-black), 0.87);
@@ -206,6 +205,14 @@ function modifyIframeTextColor(commonText) {
                     }
                     .pp {
                         background-color: unset;
+                    }
+                    /* Texto de tablas en iframes -.- */
+                    td {
+                        color:${commonText};
+                    }
+                    /* Texto de alertas en iframes -.- */
+                    .section--notification--alert{
+                        color:${commonText};
                     }
                 </style>`;
         }
