@@ -210,8 +210,11 @@ function modifyIframeTextColor(commonText) {
                     td {
                         color:${commonText};
                     }
-                    /* Texto de alertas en iframes */
+                    /* Texto de alertas y mensajes en iframes */
                     .section--notification--alert{
+                        color:${commonText};
+                    }
+                    .section--notification--message{
                         color:${commonText};
                     }
                 </style>`;
