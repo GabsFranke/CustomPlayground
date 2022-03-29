@@ -220,6 +220,9 @@ function modifyIframeTextColor(commonText) {
                     .section--notification--pin{
                         color:${commonText};
                     }
+                    .section--notification--thumb-up{
+                        color:${commonText};
+                    }
                 </style>`;
         }
     });
