@@ -217,6 +217,9 @@ function modifyIframeTextColor(commonText) {
                     .section--notification--message{
                         color:${commonText};
                     }
+                    .section--notification--pin{
+                        color:${commonText};
+                    }
                 </style>`;
         }
     });
